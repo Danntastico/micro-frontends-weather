@@ -1,6 +1,6 @@
 {
   "name": "micro-frontends-weather",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Angular application ready to be mounted on a single-spa",
   "main": "dist/main-es2015.js",
   "scripts": {
