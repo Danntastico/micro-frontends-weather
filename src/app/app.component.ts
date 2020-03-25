@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'single-spa-angular-app';
+  title = 'micro-frontends-weather';
 }
