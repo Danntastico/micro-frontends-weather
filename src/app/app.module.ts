@@ -9,6 +9,7 @@ import { EmptyRouteComponent } from './empty-route/empty-route.component';
 
 @NgModule({
   declarations: [
+    AppComponent,
     EmptyRouteComponent
   ],
   imports: [
