@@ -1,0 +1,22 @@
+<div id="divWeatherMain">
+  <div class="weatherWidgetRow">
+    <fa-icon *ngIf="WeatherData.isDay" [icon]="faSun"
+      size="2x" class="sun" [classes]="['sun']" [styles] ="{'margin-top':'10px'}">
+    </fa-icon>
+  </div>
+  <div class="weatherWidgetRow">
+    <fa-icon *ngIf="!WeatherData.isDay" [icon]="faMoon"
+      [styles]="{'margin-top':'10px', 'color': 'white', 'filter': 'drop-shadow(0px 0px 2px white)'}" size="2x" class="moon" [classes]="['moon']">
+    </fa-icon>
+  </div> 
+  <div class="weatherWidgetRow cloudDiv">
+    <fa-icon [icon]="faCloud" size="2x" class="cloud" [classes]="['cloud']" [styles] ="{'margin-top':'10px'}">
+    </fa-icon>
+  </div>
+  <div class="weatherWidgetRow" style="font-size: 32px;margin-top:5px;">{{WeatherData.temp_celcius}}º</div>
+  <div class="weatherWidgetRow" style="font-size: 12px;">{{WeatherData.temp_min}}º / {{WeatherData.temp_max}}º</div>
+  <div class="weatherWidgetRow" style="font-size: 12px;">Feels Like: {{WeatherData.temp_feels_like}}º</div>
+  <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;">{{WeatherData.name}}</div>
+  <div class="weatherWidgetRow" style="font-size: 12px;">Humidity: {{WeatherData.main.humidity}}%</div>
+  <div class="weatherWidgetRow"></div>
+</div>
